@@ -1,0 +1,127 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#goToDiv {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    position: absolute;
+    right: 1px;
+    padding: 2px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+input{
+    margin-top: 2px;
+    display: inline-flex;
+    width: 100px;
+    text-align: left;
+}
+
+button{
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#viewOnMethod{
+    width: 320px;
+    height: 150px;
+    padding: 10px;
+    position: absolute;
+    flex-wrap: wrap;
+    flex: auto;
+    top: 450px;
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    display: none;
+}
+
+#closeBtn{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+#listDiv{
+    width: 300px;
+    height: 85px;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    right: 1px;
+}
+
+#inputPlanBoundery{
+    margin-top: 10px;
+    display: inline-flex;
+    width: 260px;
+    text-align: left;
+}
+
+#inputPlanParcel{
+    margin-top: 10px;
+    display: inline-flex;
+    width: 260px;
+    text-align: left;
+}
+
+#password{
+    position: fixed;
+    top: 0px;
+    bottom:0px;
+    right: 0px;
+    left: 0px;
+    /* background-color:rgb(247, 243, 208); */
+    display: block;
+    text-align: center;
+
+    background: rgba( 0, 22, 251, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.0px );
+    -webkit-backdrop-filter: blur( 3.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+       
+
+}
+
+#inputPass{
+    width: 150px;
+    padding: 5px;
+    
+
+}
+
+section{
+
+width: 400px;
+height: 200px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 200px;
+
+
+background: rgba(0, 0, 0, 0.329);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+border-bottom: white 0.5px solid;
+
+}
+
