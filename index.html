@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khamis Mosheet Plans</title>
+
+    <!-- ============================ define CDN local & CDN ESRI ================================ -->
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.20/esri/themes/dark/main.css"
+    />
+    <!--define define cdn esri style file-->
+    <script src="https://js.arcgis.com/4.20/"></script>
+    <!--define define cdn esri javascript file-->
+
+    <link rel="stylesheet" href="style.css" />
+    <!--define local styleSheet file-->
+    <script defer src="script.js"></script>
+    <!--define local Script file -->
+    <!-- ==============================================================================================-->
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+    <!-- ==============================================================================================-->
+
+    <div id="goToDiv" class="esri-widget">
+      <h3>Zoom To Location</h3>
+      <button id="goTo_latlong">Go To</button>
+      <input
+        type="text"
+        id="longitude"
+        class="esri-widget esri-input"
+        placeholder="Longitude"
+      />
+      <input
+        type="text"
+        id="latitude"
+        class="esri-widget esri-input"
+        placeholder="Latitude"
+      />
+    </div>
+    <!-- ==============================================================================================-->
+    <div id="viewOnMethod" class="esri-widget"></div>
+    <!-- ==============================================================================================-->
+
+    <div id="listDiv" class="esri-widget">
+      <input
+        list="listPlanBoundery"
+        id="inputPlanBoundery"
+        placeholder="Search Plan Name"
+        class="esri-input"
+      />
+      <datalist id="listPlanBoundery"> </datalist>
+
+      <input
+        list="listPlanParcel"
+        id="inputPlanParcel"
+        placeholder="Search Parcel Number"
+        class="esri-input"
+      />
+      <datalist id="listPlanParcel"> </datalist>
+    </div>
+    <!-- ==============================================================================================-->
+
+    <div id="pinPoint" class="esri-widget esri-widget--button esri-interactive">
+      <span class="esri-icon-blank-map-pin"></span>
+    </div>
+
+    <!-- ==============================================================================================-->
+    <div id="password">
+      <section>
+        <h1 style="color: white; font-size: 30px">مرحبا بك</h1>
+        <!-- <h3>مخططات</h3> -->
+        <input id="inputPass" type="password" placeholder="ادخل كلمة المرور" />
+        <button id="loginBtn">دخول</button>
+      </section>
+    </div>
+
+    <!-- ==============================================================================================-->
+    <script>
+      let loginBtn = document.querySelector("#loginBtn");
+      loginBtn.addEventListener("click", () => {
+        let inputPass = document.querySelector("#inputPass").value;
+        if (inputPass == "00112233") {
+          let password = document.querySelector("#password");
+          password.style.display = "none";
+        } else {
+          alert("من فضلك ادخل كلمة المرور الصحيحة");
+        }
+      });
+    </script>
+  </body>
+</html>
